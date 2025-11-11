@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #0B2E4F;    /* DeepNavy */
-    --secondary-color: #2E5339;  /* PineGreen */
-    --accent1-color: #2A7DB8;    /* RiverBlue */
-    --accent2-color: #D6B48D;    /* RiverBank */
+    --primary-color:#2E5339 ;    
+    --secondary-color: #D6B48D; 
+    --accent1-color: #0B2E4F;   
+    --accent2-color: #2A7DB8;    
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 }
@@ -31,6 +31,10 @@ h1, h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+
+p {
+    color: black;
 }
 
 .socialmedia a {
