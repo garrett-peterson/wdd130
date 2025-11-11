@@ -82,7 +82,7 @@ h1 {
     left: 0;
     right: 0;
     padding: 8px;
-    background-color: color-mix(in srgb,var(--secondary-color) 85%,transparent);
+    background-color: rgba(214, 180, 141, 0.8);
     color: #fff;
     font-size: small;
 }
@@ -94,9 +94,8 @@ section h2 {
     color: #fff;
 }
 
-footer {
-    border-top: solid black 1px;
-    background-color: var(--accent2-color);
-    color: black;
-}
 
+section, footer, article {
+    background-color: transparent;
+    color: var(--primary-color);
+}
