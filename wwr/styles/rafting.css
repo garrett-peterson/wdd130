@@ -68,13 +68,6 @@ h1 {
     color: #fff;
 }
 
-.hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 12px;
-    padding: 8px;
-    margin-top: 10px;
-}
 
 .hero article {
     position: absolute;
@@ -82,11 +75,20 @@ h1 {
     left: 0;
     right: 0;
     padding: 8px;
-    background-color: rgba(214, 180, 141, 0.8);
+    background-color: var(--secondary-color);
+    opacity: .8;
     color: #fff;
     font-size: small;
 }
 
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+    padding: 8px;
+    margin-top: 10px;
+    opacity: 1;
+}
 
 section h2 {
     text-align: center;
@@ -97,5 +99,5 @@ section h2 {
 
 section, footer, article {
     background-color: transparent;
-    color: var(--primary-color);
+    color: var(--accent2-color);
 }
