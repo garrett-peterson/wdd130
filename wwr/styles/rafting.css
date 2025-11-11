@@ -2,7 +2,7 @@
     --primary-color: #0B2E4F;    /* DeepNavy */
     --secondary-color: #2E5339;  /* PineGreen */
     --accent1-color: #2A7DB8;    /* RiverBlue */
-    --accent2-color: #C9A36A;    /* RiverBank */
+    --accent2-color: #D6B48D;    /* RiverBank */
     --heading-font: 'Montserrat', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 }
@@ -67,4 +67,29 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 12px;
+    padding: 8px;
 }
+
+.hero article {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px, 16px;
+    background-color: color-mix(in srgb, var(--secondary-color) 85%, transparent);
+    color: #fff;
+}
+
+section h2 {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+footer {
+    border-top: solid black 1px;
+    background-color: var(--accent2-color);
+    color: black;
+}
+
