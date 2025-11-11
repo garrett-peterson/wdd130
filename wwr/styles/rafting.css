@@ -42,7 +42,7 @@ nav, p, section, article {
     width: auto;
 }
 
-.hero {
+.hero article{
     position: relative;
 
 }
