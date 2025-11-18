@@ -5,6 +5,11 @@
     --img-shadow: 0 0 30px gray;
 }
 
+header, .grid, footer{
+  max-width: 840px;
+  margin: 0 auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +20,35 @@ main {
     max-width: 840px;
 }
 
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+aside {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: var(--border);
+    background-color: var(--background-color);;
+    color: var(--white-text);
+    text-align: center;
+    position: relative;
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color:var(--background-color);
     padding: 10px;
 }
@@ -25,10 +57,14 @@ nav a {
     color: var(--white-text);
     display: block;
     padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 h1 {
     color: var(--background-color);
     margin: 15px;
+    border-bottom: solid black;
 }
 
 main img {
@@ -46,26 +82,16 @@ p {
     margin: 15px;
 }
 
-aside {
-    width: 20em;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    border: var(--border);
-    background-color: var(--background-color);;
-    color: var(--white-text);
-    text-align: center;
-    position: relative;
-}
 
 aside h2 {
     position: absolute;
     top: 30px;
-    left: 100px;
+    left: 135px;
+    color: white;
 }
 
 aside img {
-    width: 200px;
+    width: 280px;
     height: auto;
     box-shadow: var(--img-shadow)
 }
@@ -81,6 +107,15 @@ footer {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
-     background-color: #ddd;
+    background-color: #ddd;
     color: #000;
 }
+/* 
+.box a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+   list-style: none;
+} */
