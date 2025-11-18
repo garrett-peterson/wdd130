@@ -84,7 +84,7 @@ p {
 }
 .socialmedia a {
     text-decoration: none;
-    align-content: right;
+    align-content: end;
 }
 
 .socialmedia img {
