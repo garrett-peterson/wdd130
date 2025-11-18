@@ -37,8 +37,6 @@ aside {
     border: var(--border);
     background-color: var(--background-color);;
     color: var(--white-text);
-    text-align: center;
-    position: relative;
     width: 20rem;
     position: relative;
     grid-column: 1/2;

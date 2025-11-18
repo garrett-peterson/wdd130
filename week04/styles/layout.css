@@ -25,11 +25,12 @@ header {
 
 .navigation li {
     flex: 1 1 auto;
+    justify-self: left;
 }
 
 .navigation a {
     display: block;
-    color: navy;
+    color: purple;
     padding: 20px;
     text-decoration: none;
     font-size: 1.2rem;
