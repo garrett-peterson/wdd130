@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Merriweather, Georgia, serif;
+  font-size: 1.2em;
+  color: #333;
+  background: #fff;
+}
+
+h1{
+    color: darkblue;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+h2 {
+    color: darkblue;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: #f3f3f6;
+    display: grid;
+}
+
+.contact_info, .questions {
+    margin: 15px;
+    border: 2px solid darkblue;
+    border-radius: 12px;  
+    padding: 15px;
+}
+
+.contact_info label, input{
+    text-align: left;
+    display: block;
+    margin: 5px;
+}
+
+.questions label, input{
+    display: block;
+    margin: 5px;
+    padding: 10px;
+}
+
+select {
+  width: 120px;
+  padding: 8px;
+  border: 2px solid darkblue;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  color: #333;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: darkblue;
+    color:  #f3f3f6;
+    margin: 5px;
+    padding: 7px;
+    font-family: Merriweather, Georgia, serif;
+}
+
+
+footer {
+    padding-top: 20px;
+    margin-top: 50px;
+    border-top: 3px dashed black;
+    text-align: center;
+}
