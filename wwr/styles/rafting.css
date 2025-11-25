@@ -146,6 +146,15 @@ figure img {
     color: var(--accent2-color);
 }
 
+.contact_info h1.contact_header {
+  position: static;         
+  background: none;         
+  color: var(--primary-color); 
+  opacity: 1;                  
+  padding: 1rem;             
+  text-align: center;
+}
+
 .employees h2 {
     text-align: center;
     padding: 1rem;
@@ -191,18 +200,14 @@ figure img {
 }
 
 .map_form {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 .map .form {
   flex: 1;               
   padding: 20px;
-}
-
-.map iframe{
-    max-width: 25rem;
-    max-height: auto;
 }
 
 .hero article {
