@@ -1,6 +1,6 @@
 :root {
     --primary-color:#2E5339 ;    
-    --secondary-color: #D6B48D; 
+    --secondary-color: #eae3db; 
     --accent1-color: #0B2E4F;   
     --accent2-color: #2A7DB8;    
     --heading-font: 'Montserrat', sans-serif;
@@ -20,7 +20,7 @@ header {
     column-gap: 1rem;
     align-items: center;
     border-bottom: 1px solid #ccc;
-    background-color: #eae3db;
+    background-color: var(--secondary-color);
 }
 
 .logo {
@@ -145,6 +145,10 @@ section, footer, article {
     color: var(--accent2-color);
 }
 
+figure {
+  text-align: center;
+}
+
 .history {
     display: flex;
     align-items: center;
@@ -168,6 +172,106 @@ section, footer, article {
     margin: 25px;
 }
 
-figure {
-  text-align: center;
+.contact_info {
+    text-align: center;
+}
+
+.google_map {
+    border:0;
+}
+
+.map_form {
+    display: flex;
+    gap: 20px;
+}
+
+.map .form {
+  flex: 1;               
+  padding: 20px;
+}
+
+.map iframe{
+    max-width: 25rem;
+    max-height: auto;
+}
+
+form {
+    font-size: medium;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+}
+
+input, textarea, select, button {
+  padding: .75rem;
+  width: 300px;
+  margin: 0.5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin: 0 .4rem 0 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.radio-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: .5rem;
+}
+
+.group-label {
+  margin-top: 0.5rem;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+button {
+  background-color: var(--accent1-color);
+  color: #fff;
+  margin: 1rem auto 0;
+  display: block;
+  border-radius: .5rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: .5rem;
+}
+
+.employees {
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+.employees h2 {
+    text-align: center;
+    padding: 1rem;
+    color: var(--accent2-color);
+}
+
+.employees_img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 1rem;
+}
+
+figure img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top; 
 }
