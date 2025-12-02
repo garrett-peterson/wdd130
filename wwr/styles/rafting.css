@@ -360,7 +360,6 @@ a {
     border-radius: 10px;
 }
 
-
 .newsletter {
     display: grid;
     background-color: var(--secondary-color);
@@ -391,4 +390,104 @@ a {
     text-align: center;
     margin: 15px;
     grid-column: 1/ 3;
+}
+
+.trip-slider {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.trip-slider img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slide-text {
+  max-width: 400px;
+}
+
+#next-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--accent1-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+h3 {
+    color: var(--accent1-color);
+}
+
+.rafting {  
+    width: 50%;             
+    margin: 5px auto;   
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px solid var(--accent1-color);
+    color: var(--accent1-color);
+}
+
+.book_btn {
+    background-color: var(--primary-color);
+    width: 200px;
+    margin: 20px;
+}
+
+.trip_header {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 840px;
+    justify-items: center;
+    align-items: center; 
+}
+
+.trip_header button {
+    grid-column: 1 / -1;
+    grid-row: 3;  
+}
+
+.trip_header h1 {
+    position: static;
+    background-color: transparent;
+    opacity: 1;
+    color: var(--primary-color);
+    grid-column: 1 / -1;
+    grid-row: 1;   
+}
+
+.gear {
+    height: 600px;
+    width: auto;
+    padding: 5px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+.info_table {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.rafting_table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background-color: var(--secondary-color);
+  color: black;
+}
+
+.rafting_table th,
+.rafting_table td {
+  padding: 0.9rem 1.2rem;
+  white-space: nowrap;
 }

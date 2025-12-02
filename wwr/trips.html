@@ -24,8 +24,108 @@
         </nav>
     </header>
 
+    <div class="trip_header">
+        <h1>Book Your Adventure Today!</h1>
+        <img class="gear" src="images/tall.jpg" alt="rafting gear">
 
+        <div>
+            <h2>Outdoor Adventures</h2>
+            <br>
+            <h3>Camping</h3>
+            <p>Extend your adventure with our immersive outdoor camping experiences. Guests can enjoy peaceful riverside
+                or forested
+                campsites equipped with essential amenities and surrounded by breathtaking natural views. Our camping
+                options are
+                perfect for families, groups, or anyone looking to unwind, reconnect with nature, and enjoy evenings
+                under the stars
+                after a day on the river.</p>
 
+            <h3>Hiking</h3>
+            <p>Explore the beauty beyond the river with our guided hiking excursions. We offer a variety of trails
+                suited for beginners
+                and seasoned hikers alike, each showcasing scenic overlooks, wildlife, and the rugged charm of our
+                natural landscape.
+                Whether you’re seeking a short nature walk or a challenging trek, our hiking adventures provide the
+                perfect complement
+                to your rafting experience.</p>
+
+            <h3>Rafting</h3>
+            <p>At White Water Rapids, rafting is at the heart of everything we do. Our guided river adventures range
+                from gentle,
+                family-friendly floats to adrenaline-pumping whitewater challenges. Whether you’re a first-time paddler
+                or a seasoned
+                rafter seeking a serious thrill, our expert guides ensure a safe, unforgettable experience on some of
+                the most scenic
+                and exciting waters around.</p>
+            <p>Have questions or wanting to book your adventure today? Hit the button below to get in contact with us
+                today!</p>
+        </div>
+
+        <button class="book_btn" onclick="window.location.href='contact.html'" class="cta">Contact Us To Book
+            Today!</button>
+    </div>
+
+    <h2 class="rafting">Rafting Adventures</h2>
+    <div class="trip-slider">
+        <img id="slide-image" src="images/adventure_7.jpg" alt="Rafting Trip">
+
+        <div class="slide-text">
+            <h3 id="slide-title">Happy Duck</h3>
+            <p id="slide-description">
+                A beginner-friendly whitewater rafting experience designed for younger or first-time rafters. Enjoy
+                gentle
+                rapids and plenty of scenic moments along the river.
+            </p>
+            <button id="next-btn">Next ➜</button>
+        </div>
+    </div>
+
+    <div class="info_table">
+        <table class="rafting_table">
+            <tr>
+                <th>Adventure</th>
+                <th>Difficulty</th>
+                <th>Duration</th>
+                <th>Guided</th>
+                <th>Equipment Provided</th>
+            </tr>
+            <tr>
+                <td>Happy Duck</td>
+                <td>Easy</td>
+                <td>2 hours</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Grumpy Duck</td>
+                <td>Moderate</td>
+                <td>4 hours</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Big Mallard</td>
+                <td>Moderate</td>
+                <td>5 hours</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Calm Waters</td>
+                <td>Moderate</td>
+                <td>2 hours</td>
+                <td>Optional</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>The Big One</td>
+                <td>Advanced</td>
+                <td>6 hours</td>
+                <td>Yes</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+    </div>
 
     <footer>
         <p>&copy; 2025 | White Rapids | Rafting Garrett Peterson</p>
@@ -41,6 +141,56 @@
             </a>
         </nav>
     </footer>
+
+    <script>
+        const slides = [
+            {
+                image: "images/adventure_7.jpg",
+                title: "Happy Duck",
+                description: "A beginner-friendly whitewater rafting experience designed for younger or first-time rafters. Enjoy gentle rapids and plenty of scenic moments along the river."
+            },
+            {
+                image: "images/adventrue_2.jpg", // fixed filename
+                title: "Grumpy Duck",
+                description: "Our longest rafting adventure, featuring a mix of mild to moderately challenging rapids. A great option for guests who want more time on the water with a touch of excitement."
+            },
+            {
+                image: "images/adventure_3.jpg",
+                title: "Big Mallard",
+                description: "Our most popular trip, starting with smooth, easy waters before transitioning into a thrilling stretch of strong, fast-moving rapids. A balanced adventure for a wide range of rafters."
+            },
+            {
+                image: "images/adventrue_4.jpg", // fixed filename
+                title: "Calm Waters",
+                description: "A peaceful, family-friendly float down the river with little to no rapids. Ideal for young children, relaxed groups, or anyone seeking a gentle outdoor experience."
+            },
+            {
+                image: "images/adventure_5.jpg",
+                title: "The Big One",
+                description: "Our most intense and adrenaline-packed adventure, featuring powerful rapids and demanding river conditions. Perfect for experienced rafters looking for a true thrill."
+            }
+        ];
+
+        let currentIndex = 0;
+
+        const imageEl = document.getElementById("slide-image");
+        const titleEl = document.getElementById("slide-title");
+        const descEl = document.getElementById("slide-description");
+        const nextBtn = document.getElementById("next-btn");
+
+        function showSlide(index) {
+            const slide = slides[index];
+            imageEl.src = slide.image;
+            titleEl.textContent = slide.title;
+            descEl.textContent = slide.description;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        });
+    </script>
+
 </body>
 
 </html>
