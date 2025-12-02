@@ -117,6 +117,12 @@ figure img {
     object-position: top; 
 }
 
+a {
+    text-decoration: none;
+}
+
+
+/* Class CSS */
 .radio-group {
   display: flex;
   align-items: flex-start;
@@ -256,6 +262,7 @@ figure img {
     height: auto;
 } 
 
+
 .logo {
     width: 150px;
     height: auto;
@@ -280,4 +287,103 @@ figure img {
     text-decoration: none;
     font-size: 1.2rem;
     padding: 0.5rem 0;
+}
+
+
+
+.hero_homepage {
+    position: relative;   
+    overflow: hidden;    
+}
+
+.hero_homepage img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.hero_homepage h1 {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 1;
+    background-color:transparent;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.hero_homepage p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+}
+
+.hero_homepage button {
+    position: absolute;
+    bottom: 70px;
+    margin: 20px auto;
+    padding: 16px;
+    width: 150px;
+    background-color: var(--primary-color);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+    
+.outdoors{
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.outdoors img {
+    width: 250px;
+    height: 200px;
+    margin: 25px;
+    border: 8px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+
+.newsletter {
+    display: grid;
+    background-color: var(--secondary-color);
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.news_vid video {
+    display: block;
+    width: 380px;
+    margin: 15px;
+    align-self: left;
+}
+
+.news_form {
+    background-color: var(--accent1-color);
+    color: white;
+    grid-row: 1;
+    margin: 15px;
+}
+
+.news_form button {
+    background-color: var(--accent2-color);
+}
+
+.news_info {
+    color: black;
+    text-align: center;
+    margin: 15px;
+    grid-column: 1/ 3;
 }
